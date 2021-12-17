@@ -1,0 +1,97 @@
+#subscribe {
+    padding-left: 7px;
+    text-decoration: underline;
+}
+
+.details {
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+#author,
+#date {
+    font-style: normal;
+    font-weight: 600;
+}
+
+#author {
+    padding-right: 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.menu {
+    background-color: #04aa6d;
+    color: white;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #04aa6d;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+ul li {
+    display: inline;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+ul li:hover {
+    background: rgba(0, 0, 0, 0.2)
+}
+
+#subscribe {
+    text-align: start;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #d9eee1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(152, 160, 154);
+    min-width: 300px;
+}
+
+.text {
+    padding: 0px 20px 20px 20px;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+@media(min-width: 800px) {
+    .text {
+        padding: 0px 150px 50px 150px;
+        min-width: 300px;
+        max-width: 600px;
+    }
+}
