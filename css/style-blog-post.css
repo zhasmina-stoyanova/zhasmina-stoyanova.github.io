@@ -1,3 +1,6 @@
+@import url("./style-blog-post-media-768px.css") (min-width: 768px);
+@import url("./style-blog-post-media-1024px.css") (min-width: 1024px);
+
 /* Remove default margin */
 
 h1,
