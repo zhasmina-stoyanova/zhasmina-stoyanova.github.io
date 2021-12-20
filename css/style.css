@@ -1,10 +1,24 @@
 body {
-    background-color: #d9eee1;
+    background-color: #e3eee4;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.category img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+header h1 {
+    margin: 10px 0px 3px 0px;
+}
+
+blockquote {
+    margin: 0;
+}
+
 h1,
-footer {
+footer,
+blockquote {
     text-align: center;
 }
 
@@ -25,7 +39,7 @@ main {
     row-gap: 12px;
 }
 
-.article {
+article {
     padding: 15px 10px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
@@ -35,7 +49,7 @@ main {
 ul {
     list-style-type: none;
     text-align: center;
-    background-color: #04aa6d;
+    background-color: #1d9c2e;
     padding: 8px 0px;
 }
 
@@ -58,21 +72,63 @@ ul li:hover {
 a {
     width: 70px;
     height: 30px;
-    background-color: #04aa6d;
+    background-color: #1d9c2e;
     color: white;
     text-decoration: none;
     padding: 7px 6px;
     border-radius: 4px;
 }
 
-@media(min-width: 800px) {
+@media(min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    article {
+        padding: 15px 10px;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    .container {
+        display: grid;
+        grid-template-rows: 82px 7fr;
+        grid-template-columns: 200px 2fr;
+        grid-template-areas: "hd hd" "menu main" "ft ft";
+        align-items: flex-start;
+    }
+    header {
+        grid-area: hd;
+    }
+    .menu {
+        grid-area: menu;
+        background-color: #1d9c2e;
+        color: white;
+        height: 100%;
+        margin-right: 7px;
+    }
+    ul li {
+        display: block;
+        padding: 12px 0px;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: ft;
+    }
+}
+
+@media(min-width: 1024px) {
     main {
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 12px;
     }
-    .article {
+    article {
         padding: 15px 10px;
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: #ffffff;
@@ -82,7 +138,7 @@ a {
         display: grid;
         grid-template-rows: 82px 7fr 50px;
         grid-template-columns: 250px 2fr 2fr;
-        grid-template-areas: "hd hd hd" "menu main main" "ft ft ft ";
+        grid-template-areas: "hd hd hd" "menu main main" "ft ft ft";
         align-items: flex-start;
     }
     header {
@@ -90,7 +146,7 @@ a {
     }
     .menu {
         grid-area: menu;
-        background-color: #04aa6d;
+        background-color: #1d9c2e;
         color: white;
         height: 100%;
         margin-right: 7px;

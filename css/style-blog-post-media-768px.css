@@ -1,0 +1,14 @@
+@media(min-width: 768px) {
+    figure {
+        margin-left: 70px;
+    }
+    .text,
+    .author-details {
+        padding: 0px 70px 30px 70px;
+    }
+    .social-links {
+        padding: 0px 70px 20px 70px;
+        min-width: 300px;
+        max-width: 600px;
+    }
+}

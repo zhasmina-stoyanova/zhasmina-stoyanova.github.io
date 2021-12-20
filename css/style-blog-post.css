@@ -1,29 +1,78 @@
+/* Remove default margin */
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 #subscribe {
     padding-left: 7px;
     text-decoration: underline;
 }
 
-.details {
+#avatar {
+    float: left;
+    margin-right: 4px;
+    width: 50px;
+    height: 50px;
+    background: url("../Images/avatar.png") no-repeat;
+    background-size: contain;
+    border-radius: 100px;
+}
+
+.social-links {
+    padding: 0px 20px 20px 20px;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.italic {
     font-style: italic;
-    padding-bottom: 15px;
+}
+
+figure {
+    margin-left: 20px;
+    display: block;
 }
 
 #author,
 #date {
     font-style: normal;
-    font-weight: 600;
 }
 
 #author {
     padding-right: 5px;
 }
 
-h2 {
+h1 {
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+h1,
+h2,
+h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2,
+h3 {
     margin-top: 0;
 }
 
-.menu {
-    background-color: #04aa6d;
+nav {
+    background-color: #1d9c2e;
     color: white;
     width: 100%;
 }
@@ -31,7 +80,7 @@ h2 {
 ul {
     list-style-type: none;
     text-align: center;
-    background-color: #04aa6d;
+    background-color: #1d9c2e;
     margin: 0;
     padding: 8px 0px;
 }
@@ -58,13 +107,8 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    width: 100%;
-    text-align: center;
-}
-
 body {
-    background-color: #d9eee1;
+    background-color: #e3eee4;
 }
 
 .container {
@@ -73,24 +117,44 @@ body {
     align-items: center;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+article {
     background-color: white;
     border: 1px solid rgb(152, 160, 154);
     min-width: 300px;
 }
 
-.text {
-    padding: 0px 20px 20px 20px;
+.text,
+.author-details {
+    padding: 0px 20px 30px 20px;
     min-width: 300px;
     max-width: 600px;
 }
 
-@media(min-width: 800px) {
-    .text {
-        padding: 0px 150px 50px 150px;
+@media(min-width: 768px) {
+    figure {
+        margin-left: 70px;
+    }
+    .text,
+    .author-details {
+        padding: 0px 70px 30px 70px;
+    }
+    .social-links {
+        padding: 0px 70px 20px 70px;
+        min-width: 300px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    figure {
+        margin-left: 150px;
+    }
+    .text,
+    .author-details {
+        padding: 0px 150px 30px 150px;
+    }
+    .social-links {
+        padding: 0px 150px 20px 150px;
         min-width: 300px;
         max-width: 600px;
     }
