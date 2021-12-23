@@ -56,21 +56,21 @@ figure {
     padding-right: 5px;
 }
 
-h1 {
+.article-section h1 {
     font-size: 2em;
     margin-top: 15px;
 }
 
-h1,
-h2,
-h3 {
+.article-section h1,
+.article-section h2,
+.article-section h3 {
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
 }
 
-h2,
-h3 {
+.article-section h2,
+.article-section h3 {
     margin-top: 0;
 }
 

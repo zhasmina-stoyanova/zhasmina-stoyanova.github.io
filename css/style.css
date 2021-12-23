@@ -58,7 +58,7 @@ ul {
 ul li {
     display: inline;
     font-size: 20px;
-    padding: 8px 12px;
+    padding: 8px 8px;
     color: white;
     cursor: pointer;
 }
@@ -114,6 +114,7 @@ a {
     ul li {
         display: block;
         padding: 12px 0px;
+        font-size: 20px;
     }
     main {
         grid-area: main;
@@ -156,6 +157,7 @@ a {
     ul li {
         display: block;
         padding: 12px 0px;
+        font-size: 20px;
     }
     main {
         grid-area: main;
