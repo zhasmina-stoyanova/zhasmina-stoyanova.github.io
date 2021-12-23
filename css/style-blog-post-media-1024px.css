@@ -1,4 +1,7 @@
 @media(min-width: 1024px) {
+    ul li {
+        padding: 8px 12px;
+    }
     figure {
         margin-left: 150px;
     }
